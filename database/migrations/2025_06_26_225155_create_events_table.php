@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('city_state');
             $table->string('venue');
             $table->string('map_url', 1000)->nullable();
-            $table->string('tickets_url')->nullable();
+            $table->string('tickets_url', 1000)->nullable();
             $table->string('featured_image_url', 2048)->nullable();
             $table->timestamps();
         });
