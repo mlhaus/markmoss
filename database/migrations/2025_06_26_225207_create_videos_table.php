@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->longText('content')->nullable();
-            $table->string('video_url')->nullable();
+            $table->string('video_url', 1000)->nullable();
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->string('status')->default('publish');
             $table->timestamp('published_at')->nullable();
